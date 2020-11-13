@@ -17,7 +17,7 @@ String esid;
 int led;
 int ON_SIGNAL;
 int OFF_SIGNAL;
-ESP8266WebServer server(80);
+// ESP8266WebServer server(80);
 
 // try connecting to WiFi for 15 seconds
 bool WiFiManager::testWiFi() {
@@ -106,7 +106,7 @@ void WiFiManager::initialize() {
 void WiFiManager::launchWeb() {
   createWebServer();
   // Start the web server for router setup
-  server.begin();
+  server.begin(80);
 }
 
 void WiFiManager::rescan() {

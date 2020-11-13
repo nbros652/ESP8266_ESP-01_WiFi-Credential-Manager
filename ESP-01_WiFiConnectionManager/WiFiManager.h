@@ -33,6 +33,7 @@ private:
   String hostname;
   int ON_SIGNAL;
   int OFF_SIGNAL;
+  ESP8266WebServer server;
   
   bool testWiFi();
   void initialize();
