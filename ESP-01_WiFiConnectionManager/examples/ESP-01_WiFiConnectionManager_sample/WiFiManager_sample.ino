@@ -4,10 +4,10 @@ WiFiManager wifi; // create the object we'll use to handle the wifi
 
 void setup() {
   // There are some settings you can configure on the wifi object
-//  wifi.setAPIP(IPAddres(10,0,0,1)); // When the ESP is in AP mode use IP: 10.0.0.1
-                                    // If unset, the IP defaults to 192.168.4.1
+  wifi.setAPIP(IPAddress(10,0,0,1));  // When the ESP is in AP mode use IP: 10.0.0.1
+                                      // If unset, the IP defaults to 192.168.4.1
 
-//  wifi.setAPCredentials("Configure ESP", "Pass123!"); // When the ESP is in AP mode, have it
+  wifi.setAPCredentials("Configure ESP", "Pass123!"); // When the ESP is in AP mode, have it
                                                         // create a network named "Configure ESP"
                                                         // and set the network password to
                                                         // "Pass123!"
